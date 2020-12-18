@@ -15,6 +15,6 @@ spec:
     spec:
       containers:
       - name: hello
-        image: paulbouwer/hello-kubernetes:1.8
+        image: thetejani/latest:latest
         ports:
-        - containerPort: 8080
+        - containerPort: 80
