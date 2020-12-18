@@ -2,8 +2,8 @@ name: CI for dev
 on:
   push:
     branches: [ main ]
-  paths:
-    - 'config/**'  
+    paths:
+      - 'config/**'  
 jobs:
   deploy:
     runs-on: ubuntu-latest
