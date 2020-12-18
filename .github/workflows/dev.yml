@@ -12,7 +12,7 @@ jobs:
           token: ${{ secrets.DIGITALOCEAN_ACCESS_TOKEN }}
 
       - name: Save DigitalOcean kubeconfig
-        run: doctl kubernetes cluster kubeconfig save --expiry-seconds 600 kubernet-testing-autodeplyment 
+        run: doctl kubernetes cluster kubeconfig save --expiry-seconds 60 kubernet-testing-autodeplyment 
 
 
       - name: Deploy to DigitalOcean Kubernetes
