@@ -21,6 +21,10 @@ jobs:
       - name: Save DigitalOcean kubeconfig
         run: doctl kubernetes cluster kubeconfig save --expiry-seconds 600 kubernet-testing-autodeplyment 
 
+      
+      - name: Push image to docker hub Container Registry
+        run: docker pull thetejani/latest:latest
+
 
       - name: Deploy to DigitalOcean Kubernetes
         run: |
