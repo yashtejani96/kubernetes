@@ -1,9 +1,11 @@
 name: CI for dev
 on:
   push:
-    branches: [ main ]
+    branches: 
+      - main 
     paths:
-      - 'config/**'  
+      - 'config/**'
+      - '.github/workflows/**'  
 jobs:
   deploy:
     runs-on: ubuntu-latest
