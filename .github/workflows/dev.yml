@@ -24,8 +24,8 @@ jobs:
 
       - name: Deploy to DigitalOcean Kubernetes
         run: |
-        kubectl apply -f $GITHUB_WORKSPACE/config/dep.yaml
-        kubectl apply -f $GITHUB_WORKSPACE/config/ser.yaml
+         kubectl apply -f $GITHUB_WORKSPACE/config/dep.yaml
+         kubectl apply -f $GITHUB_WORKSPACE/config/ser.yaml
 
   
       - name: Verify deployment
