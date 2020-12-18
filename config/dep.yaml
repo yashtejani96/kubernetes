@@ -16,5 +16,6 @@ spec:
       containers:
       - name: hello
         image: thetejani/latest:latest
+        imagePullPolicy: Always
         ports:
         - containerPort: 80
